@@ -21,8 +21,8 @@ jobs:
 
       - name: Install Playwright
         run: |
-        pip install playwright
-        playwright install chromium
+          pip install playwright
+          playwright install chromium
 
       - name: Check Naver stock
         env:
