@@ -19,8 +19,10 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install requests
-        run: pip install requests
+      - name: Install Playwright
+        run: |
+        pip install playwright
+        playwright install chromium
 
       - name: Check Naver stock
         env:
